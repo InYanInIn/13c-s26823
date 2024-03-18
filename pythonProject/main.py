@@ -1,15 +1,5 @@
 import math
-
-class SquareGenerator:
-    def getSquaresForRange(start, end):
-        if start > end:
-            print('Start cant be bigger then end')
-            return
-        else:
-            return [(n ** 2) for n in range(start, end + 1)]
-
-    def getSquareRootsFromList(list):
-        return [math.sqrt(n) for n in list]
+from square_generator import *
 
 
 def getSquaresRange(start, end):
@@ -19,7 +9,7 @@ def getSquaresRange(start, end):
 squaresList = [(n ** 2) for n in range(1, 11)]
 
 print(squaresList)
-print(SquareGenerator.getSquaresForRange(1,11))
+print(SquareGenerator.getSquaresForRange(1,10))
 print(SquareGenerator.getSquareRootsFromList(squaresList))
 
 
