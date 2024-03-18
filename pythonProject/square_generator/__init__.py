@@ -1,7 +1,9 @@
 import math
+from abc import ABC, abstractmethod
 
 
-class SquareGenerator:
+class SquareGenerator(ABC):
+    @abstractmethod
     def getSquaresForRange(start, end):
         if start > end:
             print('Start cant be bigger then end')
